@@ -54,6 +54,15 @@ button:focus {
     background-color: #6760fa;
 
   }
+  &.inverted{
+    border: 1px solid #6760fa;
+    color: #6760fa;
+  }
+  &.light{
+    border: none;
+    background-color: #ffffff;
+    color: #6760fa;
+  }
 
 }
 

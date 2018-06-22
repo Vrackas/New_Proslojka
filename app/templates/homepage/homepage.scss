@@ -39,22 +39,88 @@
   .homepage_section {
     height: auto;
     width: 100%;
-  }& .solution {
-     .container{
-       width: 960px;
-       .solution_item{
-         max-width: 300px;
-         width: 300px;
-         height: 250px;
-         p{
-           display: block;
-         }
+  }
+  & .solution {
+    .container {
+      width: 960px;
+      .solution_item {
+        max-width: 300px;
+        width: 300px;
+        height: 250px;
+        p {
+          display: block;
+        }
 
-       }
-     }
+      }
+    }
+  }
+  & .take_it {
+    width: 100%;
+    height: 700px;
+    background: {
+      image: url("../../content/img/bg_homepage_middle.png");
+      size: auto;
+      repeat: no-repeat;
+      position: center;
+    }
+  ;
+    .container {
+      div:nth-child(1) {
+        background: {
+          image: url("../../content/img/homepage_pc.png");
+        }
+      ;
+        width: 483px;
+        height: 450px;
+        margin-top: 130px;
+      }
+      div:nth-child(2) {
+        width: 400px;
+        margin-top: 130px;
+        span, h3, p {
+          //margin: 0;
+        }
+        span {
+          text-transform: uppercase;
+          color: #6760fa;
+        }
+        h3 {
+          font-size: 28px;
+        }
+        p {
+          color: #80818b;
+          line-height: 23px;
+          margin-bottom: 40px;
+        }
+      }
 
+    }
+  }
+  & .get_started {
+    width: 100%;
+    height: 700px;
+    background: {
+      image: url("../../content/img/bg_homepage_down.png");
+      size: auto;
+      repeat: no-repeat;
+      position: center;
+    }
+  ;
+    .container {
+      color: white;
+      padding-top: 230px;
+      div:nth-child(1) {
+        width: 400px;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      div:nth-child(2) {
 
-   }
+      }
+
+    }
+  }
 
   //media
   @media (min-width: 1500px) {
@@ -70,10 +136,32 @@
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
+    .homepage_section {
 
+    }
+    & .take_it {
+      .container {
+        div:nth-child(1) {
+          width: 640px;
+        }
+      }
+    }
   }
 
   @media (min-width: 540px) and (max-width: 768px) {
+    .homepage_section {
+
+    }
+    & .take_it {
+      .container {
+        div:nth-child(1) {
+          display: none;
+        }
+        div:nth-child(2) {
+          margin-top: 230px;
+        }
+      }
+    }
 
   }
 
@@ -87,6 +175,25 @@
             margin-top: 15px;
           }
         }
+      }
+    }
+    .homepage_section {
+
+    }
+    & .take_it {
+      .container {
+        div:nth-child(1) {
+          display: none;
+        }
+        div:nth-child(2) {
+          margin-top: 230px;
+        }
+      }
+    }
+    & .get_started{
+      .container{
+        padding-top:190px;
+        flex-direction: column;
       }
     }
   }
