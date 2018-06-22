@@ -1,0 +1,30 @@
+<div class="homepage">
+
+    <header-block></header-block>
+
+
+    <div class="homepage_header" id="section">
+        <div class="container" layout="row" layout-align="center center">
+            <div><h2>Go ahead. Forget your passwords.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at corporis dignissimos facilis
+                    inventore, libero non perferendis quis sapiente velit?</p>
+                <button class="main_button primary">Try for free</button>
+                <button class="main_button ">how it works</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="homepage_section solution">
+        <div class="container" layout="row" layout-align="space-around center" layout-wrap>
+            <div class="solution_item" ng-repeat="item in vm.solutionList">
+                <img src="{{item.image}}" alt="">
+                <h3>{{item.title}}</h3>
+                <p>{{item.text}}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
