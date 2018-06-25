@@ -1,5 +1,13 @@
 //templates
 @import "templates/homepage/homepage";
+@import "templates/ecn/ecn";
+@import "templates/mt4/mt4";
+@import "templates/liquidity/liquidity";
+@import "templates/trade/trade";
+@import "templates/provider/provider";
+@import "templates/floating/floating";
+@import "templates/auto_risk/auto_risk";
+@import "templates/api/api";
 //directives
 @import "directives/header_block/header_block";
 @import "directives/footer_block/footer_block";
@@ -54,18 +62,17 @@ button:focus {
     background-color: #6760fa;
 
   }
-  &.inverted{
+  &.inverted {
     border: 1px solid #6760fa;
     color: #6760fa;
   }
-  &.light{
+  &.light {
     border: none;
     background-color: #ffffff;
     color: #6760fa;
   }
 
 }
-
 .main_button:hover {
   background-color: rgba(151, 150, 255, 0.68);
   &.primary {
@@ -74,13 +81,90 @@ button:focus {
   }
 }
 
+.main_header {
+  background: {
+    image: url("../../content/img/bg_homepage_main.png");
+    size: cover;
+    position: bottom;
+  }
+  height: 630px;
+  width: 100%;
+  .container {
+    div {
+      padding-top: 200px;
+      width: 600px;
+      text-align: center;
+      h2, p {
+        color: #ffffff;
+      }
+      h2 {
+        font: {
+          size: 70px;
+        }
+      ;
+      }
+      p {
+        font: {
+          size: 20px;
+        }
+      ;
+      }
+      .main_button:nth-child(4) {
+        margin-left: 40px;
+      }
+    }
+  }
+
+}
+
+.main_section {
+  .container {
+
+    padding-top: 100px;
+  }
+
+  &.text {
+    .container {
+      h1, h2 {
+        margin: 55px auto;
+        text-align: center;
+      }
+      h1:nth-child(1){
+        margin-top: 0;
+      }
+      p{
+        line-height: 23px;
+      }
+      ul{
+        padding-left: 20px;
+        margin-bottom: 40px;
+
+        li {
+          margin: 5px 0;
+        }
+      }
+
+    }
+
+  }
+}
+
 .container {
+
+
   margin: 0 auto;
 }
+
+//media
 
 @media (min-width: 1500px) {
   .container {
     width: 1440px;
+  }
+  .main_section {
+    .container {
+      width: 960px;
+    }
   }
 }
 
@@ -88,11 +172,21 @@ button:focus {
   .container {
     width: 1170px;
   }
+  .main_section {
+    .container {
+      width: 960px;
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .container {
     width: 970px;
+  }
+  .main_section {
+    .container {
+      width: 960px;
+    }
   }
 }
 
@@ -112,4 +206,16 @@ button:focus {
   .container {
     width: 310px;
   }
+  .main_section{
+
+
+    &.text{
+      .container{
+        p,li{
+          text-align: justify;
+        }
+      }
+    }
+  }
+
 }

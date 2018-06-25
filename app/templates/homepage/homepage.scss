@@ -1,6 +1,6 @@
 .homepage {
 
-  .homepage_header {
+  .main_header {
     background: {
       image: url("../../content/img/bg_homepage_main.png");
       size: cover;
@@ -12,30 +12,16 @@
     .container {
       div {
         padding-top: 120px;
-        width: 600px;
-        text-align: center;
-        h2, p {
-          color: #ffffff;
-        }
         h2 {
           font: {
             size: 42px;
           }
         ;
         }
-        p {
-          font: {
-            size: 20px;
-          }
-        ;
-        }
-        .main_button:nth-child(4) {
-          margin-left: 40px;
-        }
       }
     }
-
   }
+
   .homepage_section {
     height: auto;
     width: 100%;
@@ -46,11 +32,23 @@
       .solution_item {
         max-width: 300px;
         width: 300px;
-        height: 250px;
+        height: 280px;
         p {
           display: block;
         }
+        button {
+          margin: 0 auto;
+          //display: block;
+          //display: none;
+          transition: opacity .5s;
+          opacity: 0;
+        }
 
+      }
+      .solution_item:hover {
+        button {
+          opacity: 1;
+        }
       }
     }
   }
@@ -152,6 +150,16 @@
     .homepage_section {
 
     }
+    & .solution {
+      .container {
+        .solution_item {
+          text-align: center;
+          button{
+            opacity: 1;
+          }
+        }
+      }
+    }
     & .take_it {
       .container {
         div:nth-child(1) {
@@ -166,7 +174,7 @@
   }
 
   @media (max-width: 540px) {
-    .homepage_header {
+    .main_header {
       .container {
         div {
           padding-top: 40px;
@@ -180,6 +188,16 @@
     .homepage_section {
 
     }
+    & .solution   {
+      .container {
+        .solution_item {
+          text-align: center;
+          button{
+            opacity: 1;
+          }
+        }
+      }
+    }
     & .take_it {
       .container {
         div:nth-child(1) {
@@ -190,9 +208,9 @@
         }
       }
     }
-    & .get_started{
-      .container{
-        padding-top:190px;
+    & .get_started {
+      .container {
+        padding-top: 190px;
         flex-direction: column;
       }
     }

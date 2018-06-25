@@ -3,7 +3,7 @@
     <header-block></header-block>
 
 
-    <div class="homepage_header" id="section">
+    <div class="main_header" id="section">
         <div class="container" layout="row" layout-align="center center">
             <div><h2>Go ahead. Forget your passwords.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at corporis dignissimos facilis
@@ -21,6 +21,7 @@
                 <img src="{{item.image}}" alt="">
                 <h3>{{item.title}}</h3>
                 <p>{{item.text}}</p>
+                <button class="main_button inverted" ui-sref="{{item.link}}">detail</button>
             </div>
 
         </div>

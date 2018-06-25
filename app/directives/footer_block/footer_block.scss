@@ -9,6 +9,7 @@
   .container {
     .footer_toolbar{
       ul{
+        padding: 0;
         list-style-type: none;
         li{
           margin: 7px;
@@ -45,7 +46,7 @@
 @media (min-width: 1500px) {
   #footer_block {
     .container {
-
+      width: 960px;
     }
   }
 }
@@ -80,6 +81,7 @@
 @media (min-width: 540px) and (max-width: 768px) {
   #footer_block {
     .container {
+      border-top: 1px solid #a8aab14f;
       .footer_container {
 
       }
@@ -91,6 +93,7 @@
 @media (max-width: 540px) {
   #footer_block {
     .container {
+      border-top: 1px solid #a8aab14f;
       .footer_container {
         .footer_text{
           text-align: justify;
