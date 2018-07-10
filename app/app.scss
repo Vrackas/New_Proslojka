@@ -8,6 +8,8 @@
 @import "templates/floating/floating";
 @import "templates/auto_risk/auto_risk";
 @import "templates/api/api";
+@import "templates/about/about";
+@import "templates/contact/contact";
 //directives
 @import "directives/header_block/header_block";
 @import "directives/footer_block/footer_block";
@@ -73,6 +75,7 @@ button:focus {
   }
 
 }
+
 .main_button:hover {
   background-color: rgba(151, 150, 255, 0.68);
   &.primary {
@@ -129,13 +132,13 @@ button:focus {
         margin: 55px auto;
         text-align: center;
       }
-      h1:nth-child(1){
+      h1:nth-child(1) {
         margin-top: 0;
       }
-      p{
+      p {
         line-height: 23px;
       }
-      ul{
+      ul {
         padding-left: 20px;
         margin-bottom: 40px;
 
@@ -147,10 +150,57 @@ button:focus {
     }
 
   }
+  &.contact {
+    .container {
+      padding-bottom: 40px;
+      .address{
+        width: 300px;
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          padding: 40px;
+          box-sizing: border-box;
+          a{
+            margin: 8px 0;
+            color: #6760fa;
+            text-decoration: none;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      form {
+        width: 300px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        md-input-container {
+          margin: 5px 0 !important;
+        }
+
+        textarea {
+          width: 300px;
+        }
+        .send_button {
+          display: flex;
+          align-self: center;
+          flex-direction: column;
+        }
+
+      }
+    }
+    .container > div:nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap:wrap ;
+    }
+  }
 }
 
 .container {
-
 
   margin: 0 auto;
 }
@@ -206,12 +256,11 @@ button:focus {
   .container {
     width: 310px;
   }
-  .main_section{
+  .main_section {
 
-
-    &.text{
-      .container{
-        p,li{
+    &.text {
+      .container {
+        p, li {
           text-align: justify;
         }
       }

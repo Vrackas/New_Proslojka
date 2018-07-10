@@ -533,6 +533,42 @@ button:focus {
   .main_section.text .container ul li {
     margin: 5px 0; }
 
+.main_section.contact .container {
+  padding-bottom: 40px; }
+  .main_section.contact .container .address {
+    width: 300px; }
+    .main_section.contact .container .address div {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 40px;
+      box-sizing: border-box; }
+      .main_section.contact .container .address div a {
+        margin: 8px 0;
+        color: #6760fa;
+        text-decoration: none; }
+      .main_section.contact .container .address div a:hover {
+        text-decoration: underline; }
+  .main_section.contact .container form {
+    width: 300px;
+    display: flex;
+    align-content: center;
+    flex-direction: column; }
+    .main_section.contact .container form md-input-container {
+      margin: 5px 0 !important; }
+    .main_section.contact .container form textarea {
+      width: 300px; }
+    .main_section.contact .container form .send_button {
+      display: flex;
+      align-self: center;
+      flex-direction: column; }
+
+.main_section.contact .container > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
 .container {
   margin: 0 auto; }
 

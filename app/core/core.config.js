@@ -68,6 +68,18 @@
                 controller: 'APIController',
                 controllerAs: 'vm'
             })
+            .state('about', {
+                url: '/about',
+                templateUrl: 'templates/about/about.html',
+                controller: 'AboutController',
+                controllerAs: 'vm'
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'templates/contact/contact.html',
+                controller: 'ContactController',
+                controllerAs: 'vm'
+            })
 
 
         // $locationProvider.html5Mode(true);
