@@ -5,9 +5,10 @@
   height: 630px;
   width: 100%; }
   .homepage .main_header .container div {
+    width: 700px;
     padding-top: 120px; }
     .homepage .main_header .container div h2 {
-      font-size: 42px; }
+      font-size: 65px; }
 
 .homepage .homepage_section {
   height: auto;
@@ -73,6 +74,10 @@
     width: 640px; } }
 
 @media (min-width: 540px) and (max-width: 768px) {
+  .homepage .main_header .container div {
+    padding-top: 100px; }
+    .homepage .main_header .container div h2 {
+      font-size: 60px; }
   .homepage .solution .container .solution_item {
     text-align: center; }
     .homepage .solution .container .solution_item button {
@@ -84,7 +89,9 @@
 
 @media (max-width: 540px) {
   .homepage .main_header .container div {
-    padding-top: 40px; }
+    padding-top: 170px; }
+    .homepage .main_header .container div h2 {
+      font-size: 38px; }
     .homepage .main_header .container div .main_button:nth-child(4) {
       margin-left: 0;
       margin-top: 15px; }

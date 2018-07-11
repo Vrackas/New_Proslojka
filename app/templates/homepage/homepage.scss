@@ -10,11 +10,13 @@
     height: 630px;
     width: 100%;
     .container {
+
       div {
+        width: 700px;
         padding-top: 120px;
         h2 {
           font: {
-            size: 42px;
+            size: 65px;
           }
         ;
         }
@@ -147,6 +149,16 @@
   }
 
   @media (min-width: 540px) and (max-width: 768px) {
+    .main_header {
+      .container {
+        div {
+          padding-top: 100px;
+          h2 {
+            font-size: 60px;
+          }
+        }
+      }
+    }
     .homepage_section {
 
     }
@@ -154,7 +166,7 @@
       .container {
         .solution_item {
           text-align: center;
-          button{
+          button {
             opacity: 1;
           }
         }
@@ -177,7 +189,10 @@
     .main_header {
       .container {
         div {
-          padding-top: 40px;
+          padding-top: 170px;
+          h2 {
+            font-size: 38px;
+          }
           .main_button:nth-child(4) {
             margin-left: 0;
             margin-top: 15px;
@@ -188,11 +203,11 @@
     .homepage_section {
 
     }
-    & .solution   {
+    & .solution {
       .container {
         .solution_item {
           text-align: center;
-          button{
+          button {
             opacity: 1;
           }
         }
