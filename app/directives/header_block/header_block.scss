@@ -61,10 +61,10 @@
             background: 0;
             border-style: solid;
             border-width: 4px 4px 0;
-            border-color: #384656 transparent transparent;
+            border-color: #FFFFFF transparent transparent;
             display: inline-block;
             right: -11px;
-            top: 4px;
+            top: 7px;
           }
           .solutions_list {
             position: absolute;
@@ -99,11 +99,22 @@
             li {
               margin: 0 !important;
               span {
+                color: #303030;
                 padding: 0 10px;
               }
+              span:hover{
+                opacity: 0.5;
+              }
+              span:focus{
+                outline: none;
+              }
+            }
+            li:focus{
+              outline: none;
             }
             span:after {
               border-style: none;
+              //color: #FFFFFF;
             }
             &.active {
               opacity: 1;
@@ -115,6 +126,9 @@
         }
         li:nth-child(1) {
           margin-left: 0;
+        }
+        li:focus{
+          outline: none;
         }
 
       }

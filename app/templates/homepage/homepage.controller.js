@@ -13,51 +13,63 @@
         vm.solutionList = [
             {
                 image:'content/img/homepage_solution/1.png',
-                title:'ECN',
-                text:'A high-tech multi-module product which serves as the basis for the whole system',
+                title:'homepage_solution_item1_title',
+                text:'homepage_solution_item1_text',
                 link:'ecn'
             },
             {
                 image:'content/img/homepage_solution/4 (2).png',
-                title:'MT4/MT5/API Bridge',
-                text:'Highly functional bridges – the ideal solution for all brokers.',
+                title:'homepage_solution_item2_title',
+                text:'homepage_solution_item2_text',
                 link:'mt4'
             },
             {
                 image:'content/img/homepage_solution/2.png',
-                title:'Liquidity Solutions',
-                text:'We offer several options for obtaining high-quality liquidity',
+                title:'homepage_solution_item3_title',
+                text:'homepage_solution_item3_text',
                 link:'liquidity'
             },
             {
                 image:'content/img/homepage_solution/3.png',
-                title:'Trade Settings',
-                text:'A wide range of features which provide customers with the ability to customise order execution',
+                title:'homepage_solution_item4_title',
+                text:'homepage_solution_item4_text',
                 link:'trade'
             },
             {
                 image:'content/img/homepage_solution/5 (2).png',
-                title:'Provider management',
-                text:'Automatic elimination of imbalances in liquidity providers',
+                title:'homepage_solution_item5_title',
+                text:'homepage_solution_item5_text',
                 link:'provider'
             },
             {
                 image:'content/img/homepage_solution/3.png',
-                title:'Floating leverage',
-                text:'A service which provides customers with a flexible solution for the margin requirements',
+                title:'homepage_solution_item6_title',
+                text:'homepage_solution_item6_text',
                 link:'floating'
             },
             {
                 image:'content/img/homepage_solution/6.png',
-                title:'Auto Risk Management',
-                text:'An intelligent system for automatic management of the company’s risks',
+                title:'homepage_solution_item7_title',
+                text:'homepage_solution_item7_text',
                 link:'auto_risk'
             },
             {
                 image:'content/img/homepage_solution/4 (2).png',
-                title:'API',
-                text:'A software interface which allows to trade without the trading terminal',
+                title:'homepage_solution_item8_title',
+                text:'homepage_solution_item8_text',
                 link:'api'
+            },
+            {
+                image:'content/img/homepage_solution/1.png',
+                title:'homepage_solution_item9_title',
+                text:'homepage_solution_item9_text',
+                link:'trader_room'
+            },
+            {
+                image:'content/img/homepage_solution/3.png',
+                title:'homepage_solution_item10_title',
+                text:'homepage_solution_item10_text',
+                link:'crm'
             }
         ]
 

@@ -6,29 +6,17 @@
         .module('app')
         .controller('HeaderBlockController', HeaderBlockController);
 
-    HeaderBlockController.$inject = ['$state', '$timeout'];
+    HeaderBlockController.$inject = ['$state', '$timeout', '$translate'];
 
-    function HeaderBlockController($state, $timeout) {
+    function HeaderBlockController($state, $timeout, $translate) {
         let vm = this;
 
         vm.contentActive = false;
 
         vm.langOpen = langOpen;
+        vm.changeLang = changeLang;
         vm.headerWrapperOpen = headerWrapperOpen;
         vm.headerWrapperClose = headerWrapperClose;
-        vm.getStarted = getStarted;
-
-        function langOpen(style) {
-            console.log($(style));
-            $(style).addClass('active');
-
-            $(document).mouseup(function (e) {
-                let container = $(style);
-                if (container.has(e.target).length === 0) {
-                    container.removeClass('active');
-                }
-            });
-        }
 
 
         function headerWrapperOpen() {
@@ -45,13 +33,26 @@
             $('.header_wrapper').removeClass('active');
         }
 
+        function langOpen(style) {
 
-        function getStarted() {
-            location.href = 'https://www.desk.iscopay.com/';
+            $timeout(function () {
+                $(style).addClass('active');
+            });
 
+            $(document).mouseup(function (e) {
+                var container = $(style);
+                if (container.has(e.target).length === 0){
+                    container.removeClass('active');
+                }
+            });
+        }
+
+        function changeLang(lang) {
+            $translate.use(lang);
         }
 
         $(document).ready(function () {
+            $('body,html').animate({scrollTop: 0}, 1);
             $(window).scroll(function () {
                 let wScroll = $(this).scrollTop();
 

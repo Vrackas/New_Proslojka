@@ -10,8 +10,8 @@
         ])
         .run(runBlock);
 
-    // runBlock.$inject = ['$sessionStorage','$localStorage',];
+    runBlock.$inject = ['$translate'];
 
-    function runBlock() {
+    function runBlock($translate) {
     }
 })();

@@ -5,12 +5,8 @@
 
     <div class="main_header" id="section">
         <div class="container" layout="row" layout-align="center center">
-            <div><h2>Reliable partner with reliable solution</h2>
-                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at corporis dignissimos facilis-->
-                    <!--inventore, libero non perferendis quis sapiente velit?</p>-->
-                <!--<button class="main_button primary">Try for free</button>-->
-                <!--<button class="main_button ">how it works</button>-->
-
+            <div>
+                <h2>{{"homepage_title" |translate}}</h2>
             </div>
         </div>
     </div>
@@ -19,9 +15,9 @@
         <div class="container" layout="row" layout-align="space-around center" layout-wrap>
             <div class="solution_item" ng-repeat="item in vm.solutionList">
                 <img src="{{item.image}}" alt="">
-                <h3>{{item.title}}</h3>
-                <p>{{item.text}}</p>
-                <button class="main_button inverted" ui-sref="{{item.link}}">detail</button>
+                <h3>{{item.title | translate}}</h3>
+                <p>{{item.text | translate}}</p>
+                <button class="main_button inverted" ui-sref="{{item.link}}">{{'homepage_solution_detail' | translate}}</button>
             </div>
 
         </div>

@@ -4,9 +4,9 @@
         .config(mainConfig);
 
 
-    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+    mainConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider','$translateProvider'];
 
-    function mainConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+    function mainConfig($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
 
         $urlRouterProvider.otherwise('/home');
@@ -80,11 +80,35 @@
                 controller: 'ContactController',
                 controllerAs: 'vm'
             })
+            .state('crm', {
+                url: '/crm',
+                templateUrl: 'templates/crm/crm.html',
+                controller: 'CRMController',
+                controllerAs: 'vm'
+            })
+            .state('trader_room', {
+                url: '/trader_room',
+                templateUrl: 'templates/trader_room/trader_room.html',
+                controller: 'TraderRoomController',
+                controllerAs: 'vm'
+            })
 
 
-        // $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(true);
+
+        $translateProvider.registerAvailableLanguageKeys(['en', 'ru'], {
+            'en-*': 'en',
+            'ru-*': 'ru'
+        });
 
 
+        $translateProvider.useStaticFilesLoader({
+            prefix: 'language/',
+            suffix: '.json'
+        });
+
+        $translateProvider.preferredLanguage('en');
+        $translateProvider.useSanitizeValueStrategy(null);
     }
 
 

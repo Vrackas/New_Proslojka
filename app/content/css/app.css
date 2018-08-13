@@ -163,10 +163,10 @@
           background: 0;
           border-style: solid;
           border-width: 4px 4px 0;
-          border-color: #384656 transparent transparent;
+          border-color: #FFFFFF transparent transparent;
           display: inline-block;
           right: -11px;
-          top: 4px; }
+          top: 7px; }
         #header_site .header_site_content .header_site_content_menu ul li .solutions_list {
           position: absolute;
           width: 100%;
@@ -195,7 +195,14 @@
           #header_site .header_site_content .header_site_content_menu ul li .lang_list li {
             margin: 0 !important; }
             #header_site .header_site_content .header_site_content_menu ul li .lang_list li span {
+              color: #303030;
               padding: 0 10px; }
+            #header_site .header_site_content .header_site_content_menu ul li .lang_list li span:hover {
+              opacity: 0.5; }
+            #header_site .header_site_content .header_site_content_menu ul li .lang_list li span:focus {
+              outline: none; }
+          #header_site .header_site_content .header_site_content_menu ul li .lang_list li:focus {
+            outline: none; }
           #header_site .header_site_content .header_site_content_menu ul li .lang_list span:after {
             border-style: none; }
           #header_site .header_site_content .header_site_content_menu ul li .lang_list.active {
@@ -204,6 +211,8 @@
             transition-delay: 0s, 0s; }
       #header_site .header_site_content .header_site_content_menu ul li:nth-child(1) {
         margin-left: 0; }
+      #header_site .header_site_content .header_site_content_menu ul li:focus {
+        outline: none; }
   #header_site .header_site_content .header_site_content_button {
     float: right;
     margin-left: 20px; }
